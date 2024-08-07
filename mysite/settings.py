@@ -85,21 +85,21 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-# DATABASES = {
-#     'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
-# }
-
 DATABASES = {
-    'default': {
-        "ENGINE": 'django.db.backends.postgresql_psycopg2',
-        "NAME": 'devdb4',
-        # "TEST_NAME": env('SQL_TEST_DATABASE'),
-        "USER": 'amir',
-        "PASSWORD": "Eddy@747",
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
-    }
+    'default': dj_database_url.config(default=os.getenv('DATABASE_URL'))
 }
+
+# DATABASES = {
+#     'default': {
+#         "ENGINE": 'django.db.backends.postgresql_psycopg2',
+#         "NAME": 'devdb4',
+#         # "TEST_NAME": env('SQL_TEST_DATABASE'),
+#         "USER": 'amir',
+#         "PASSWORD": "Eddy@747",
+#         'HOST': '127.0.0.1',
+#         'PORT': '5432',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators

@@ -2,24 +2,6 @@
 
 A Django application that provides an API for uploading and storing DICOM files along with their associated metadata. This project utilizes Django REST Framework for building RESTful APIs and pydicom for extracting metadata from DICOM files.
 
-## Table of Contents
-
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-  - [Using Docker](#using-docker)
-  - [Local Installation (Optional)](#local-installation-optional)
-- [Usage](#usage)
-  - [Accessing the Admin Interface](#accessing-the-admin-interface)
-- [API Endpoints](#api-endpoints)
-- [Authentication](#authentication)
-- [Data Validation and Error Handling](#data-validation-and-error-handling)
-- [Setup and Deployment](#setup-and-deployment)
-  - [Prerequisites](#prerequisites)
-  - [Environment Variables](#environment-variables)
-  - [Docker Deployment](#docker-deployment)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
