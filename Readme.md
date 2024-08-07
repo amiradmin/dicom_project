@@ -45,14 +45,12 @@ DJANGO_SUPERUSER_USERNAME=admin
 DJANGO_SUPERUSER_EMAIL=admin@gmail.com
 DJANGO_SUPERUSER_PASSWORD=your_superuser_password
 DEBUG=1
-Docker Deployment
-The application includes an entrypoint script that handles database migrations and superuser creation automatically. To build and start the containers, run:
 ```
 
 
 
 
-5. **Access the application:**
+4**Access the application:**
 ```
 Open your browser and navigate to http://127.0.0.1:8000 to access the API.
 Usage
@@ -74,7 +72,6 @@ On error, returns validation errors.
 - The API uses JWT (JSON Web Tokens) for authentication.
 ```env
 POST /api/token/: Obtain JWT token.
-POST /api/token/refresh/: Refresh JWT token.
 Data Validation and Error Handling
 Data Validation: Ensured through Django and DRF serializers (e.g., ensuring unique identifiers).
 Error Handling: Standardized error responses with appropriate HTTP status codes.
@@ -82,12 +79,10 @@ Setup and Deployment
 Prerequisites
 Docker
 Docker Compose
-Environment Variables
-Create a .env file in the root directory with the following content:
+
 ```
 4. **Build and start the containers:**
 - Run the following command to build the Docker images and start the application:
 ```bash
 docker-compose up --build
 ```
-- The entrypoint script will wait for the database to be ready, run migrations, and create a superuser if it doesn't already exist.
